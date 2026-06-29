@@ -3814,6 +3814,7 @@
         }
 
         // --- Event Listeners ---
+        dom.googleLoginBtn.addEventListener('click', signInWithGoogle);
         dom.generateSheetBtn.addEventListener('click', () => {
             const formType = dom.formTypeSelect.value;
             let allFormsHTML = '';
