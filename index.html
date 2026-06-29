@@ -4058,6 +4058,9 @@
         setVhProperty();
         window.addEventListener('resize', setVhProperty);
         window.addEventListener('orientationchange', setVhProperty);
+
+        // Google giriş butonunu kimlik doğrulama fonksiyonuna bağla
+        dom.googleLoginBtn.addEventListener('click', signInWithGoogle);
         
         onAuthStateChanged(auth, (user) => {
             if (user) {
